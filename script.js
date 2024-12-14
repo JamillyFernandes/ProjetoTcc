@@ -13,7 +13,7 @@ document.addEventListener("DOMContentLoaded", function () {
             // Obter o ID correspondente ao href do link
             const targetId = link.getAttribute("href").substring(1); // Remove o '#' do href
 
-            if (targetId === "inicio") {
+            if (targetId === "início") {
                 // Restaurar o conteúdo inicial
                 sectionContent.innerHTML = initialContent;
             } else {
