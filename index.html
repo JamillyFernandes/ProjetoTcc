@@ -1,0 +1,440 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Projeto TCC</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+      crossorigin="anonymous"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@800&display=swap"
+      rel="stylesheet"
+    />
+
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css"
+    />
+  </head>
+  <body>
+    <nav class="navbar navbar-dark">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="https://ijca.org.br/" target="_blank">
+          <img src="./imagens/ijca.jpg" style="width: 50px" alt="" />
+        </a>
+      </div>
+    </nav>
+
+    <header>
+      <h1>Arquitetura Serverless</h1>
+      <p>
+        Este website foi desenvolvido como parte de um estudo sobre arquitetura
+        serverless, destacando soluções modernas e eficientes hospedadas
+        integralmente na nuvem.
+      </p>
+
+      <!-- Botões abaixo do h1, entre Arquitetura e Cloudless -->
+      <div class="buttons">
+        <a class="nav-link" href="#inicio"
+          ><button class="btn btn-primary">Inicio</button></a
+        >
+        <a class="nav-link" href="#arquitetura"
+          ><button class="btn btn-primary">Arquitetura</button></a
+        >
+        <a class="nav-link" href="#orcamento"
+          ><button class="btn btn-primary">Orçamento</button></a
+        >
+        <a class="nav-link" href="#perfil"
+          ><button class="btn btn-primary">Equipe</button></a
+        >
+      </div>
+    </header>
+
+    <section class="inicio container" id="content">
+      <h2>Cloudless</h2>
+      <div>
+        <p class="lh-1">
+          Este projeto do TCC aborda o tema Serverless, explorando suas
+          vantagens, desafios e aplicações em ambientes de computação em nuvem.
+          Utilize os botões acima para acessar informações detalhadas sobre os
+          integrantes do projeto, a arquitetura proposta e o orçamento estimado.
+        </p>
+      </div>
+    </section>
+
+    <!-- Divs com conteúdo -->
+    <div id="new" class="arquitetura hidden">
+      <h2>Arquitetura</h2>
+      <br />
+      <img
+        src="./imagens/Serverless.drawio.png"
+        alt="Arquitetura Serverless"
+      /><br />
+      <p class="blockquote text-center">
+        Este projeto tem como objetivo desenvolver uma arquitetura serverless
+        para a startup Nova Tech, que está criando um e-commerce e busca
+        aprimorar sua infraestrutura. O foco será garantir alta disponibilidade,
+        escalabilidade e segurança para o ambiente de e-commerce, aproveitando
+        as melhores práticas da AWS e adotando soluções totalmente gerenciadas
+        para simplificar a operação e reduzir custos.
+      </p>
+      <p class="blockquote text-center">
+        Serverless: Refere-se ao uso de serviços gerenciados que eliminam a
+        necessidade de gerenciar servidores diretamente, como AWS Lambda, API
+        Gateway e DynamoDB. Isso permite que a equipe da Nova Tech concentre
+        seus esforços no desenvolvimento do negócio, enquanto a AWS cuida da
+        infraestrutura.
+      
+         Benefícios: Uma arquitetura serverless oferece
+        escalabilidade automática, custos alinhados ao uso e maior agilidade no
+        desenvolvimento, fatores essenciais para o sucesso de um e-commerce em
+        crescimento.
+      </p>
+
+      <p class="blockquote text-center">
+        ● Objetivos: Implementar uma infraestrutura serverless na AWS seguindo
+        boas práticas de segurança, escalabilidade e alta disponibilidade.
+      </p>
+
+      <p class="blockquote text-center">
+
+        ● Visão Geral dos Serviços Utilizados:
+        </p>
+
+        <p class="blockquote text-center">
+         
+        1. Serverless: 
+      </p>
+
+        <p class="blockquote text-center">
+        AWS Lambda: O
+        coração da lógica de negócios. Cada função Lambda tem responsabilidades
+        específicas, como login, operações administrativas e processamento de
+        compras. Amazon DynamoDB: Armazena dados críticos, como informações de
+        transações e produtos, com baixa latência e alta disponibilidade. AWS
+        Step Functions: Orquestra os fluxos de trabalho para validação de
+        pedidos, processamento de pagamentos, atualização de estoque e
+        notificações. Amazon SQS: Garante o desacoplamento entre componentes,
+        permitindo o envio de mensagens assíncronas.
+      </p>
+
+        <p class="blockquote text-center">
+        2. Segurança:
+        </p>
+
+        <p class="blockquote text-center">
+        AWS WAF:
+        Protege contra ataques de injeção SQL, Cross-Site Scripting (XSS) e
+        outros padrões de tráfego malicioso. AWS Shield: Fornece proteção
+        automática contra ataques DDoS. AWS Certificate Manager (ACM): Gerencia
+        certificados SSL/TLS para comunicação segura.
+        </p>
+
+        <p class="blockquote text-center">
+        3. Armazenamento:
+        </p>
+
+        <p class="blockquote text-center">
+         Amazon S3: Armazena conteúdos estáticos e arquivos necessários para o
+        front-end.
+        </p>
+
+        <p class="blockquote text-center">
+        4. Rede e Gerenciamento de Tráfego: 
+        </p>
+
+        <p class="blockquote text-center">
+        Amazon Route 53: Fornece
+        um serviço de DNS escalável e confiável para roteamento de usuários até
+        o endpoint do CloudFront. Amazon CloudFront: Atua como uma CDN (Content
+        Delivery Network), acelerando o acesso a conteúdos estáticos e dinâmicos
+        e adicionando uma camada extra de segurança. Amazon API Gateway:
+        Gerencia as requisições para os serviços serverless, atuando como ponto
+        de entrada para as APIs RESTful. NAT Gateway: Permite que recursos em
+        sub-redes privadas acessem a internet de forma segura, sem expor seus
+        IPs privados, garantindo comunicação unidirecional e proteção. 
+        </p>
+
+        <p class="blockquote text-center">
+        5. Gestão de Usuários:
+        </p>
+
+        <p class="blockquote text-center">
+        Amazon Cognito: Gerencia a autenticação e autorização de
+        usuários, conectando-se diretamente ao serviço de login.
+        </p>
+
+        <p class="blockquote text-center">
+        6.  Gerenciamento e Governança:
+        </p>
+
+        <p class="blockquote text-center">>
+        Amazon IAM (Identity and Access Management):
+        Gerencia permissões de usuários e acessos entre serviços. AWS SAM
+        (Serverless Application Model): Facilita o controle de versão e a
+        implantação do código das funções Lambda.
+        </p>
+
+        <p class="blockquote text-center">
+        7. Monitoramento e Observabilidade:
+        </p>
+
+        <p class="blockquote text-center">
+        AWS CloudWatch: Centraliza métricas e logs,
+        configurando alarmes para eventos críticos. AWS CloudTrail: Garante
+        auditoria e rastreamento de ações realizadas nos serviços AWS. AWS
+        X-Ray: Realiza rastreamento detalhado de solicitações, ajudando a
+        identificar gargalos.
+        
+        <p class="blockquote text-center">
+        8. E-mail e Notificações:
+        </p>
+
+        <p class="blockquote text-center">
+        Amazon SES: Envia
+        e-mails transacionais, como confirmações de compra e atualizações de
+        pedidos, diretamente para os clientes.
+      </p>
+    </div>
+
+    <div class="orcamento hidden">
+      <h2>Orçamento</h2>
+      <br />
+      <img
+        src="./imagens/WhatsApp Image 2024-12-10 at 18.01.09.jpeg"
+        alt="Imagem do Orçamento"
+        class="img-rounded"
+      /><br />
+      <h3>● Estimativa Mensal de Custos:</h3>
+      <div class="oncamentoP" style="text-align: left">
+        <p>
+          1. Amazon Route 53: Detalhes: 1 zona hospedada. Custo total estimado:
+          $4,50/mês.
+        </p>
+        <p>
+          2. Amazon CloudFront: Detalhes: Lida com 10.000 solicitações HTTPS por
+          mês, além de transferir 10 GB de dados de saída para a Internet e 10
+          GB de dados de saída para a origem mensalmente. Custo total estimado:
+          $1,05/mês.
+        </p>
+        <p>
+          3. AWS Certificate Manager: Detalhes: Certificados SSL públicos são
+          gratuitos no ACM quando usados com CloudFront. Custo total estimado:
+          $0,00/mês.
+        </p>
+        <p>
+          4. AWS WAF: Detalhes: Processa até 10 grupos de regras por mês, com 1
+          regra em cada grupo. Custo total estimado: $0,00/mês.
+        </p>
+        <p>
+          5. Amazon Shield: Detalhes: O AWS Shield Standard se torna gratuito
+          quando usado o Elastic Load Balancing (ELB), o Application Load
+          Balancer, o Amazon CloudFront e o Amazon Route 53. Custo total
+          estimado: $0,00/mês.
+        </p>
+        <p>
+          6. Amazon S3: Detalhes: O armazenamento na classe S3 Standard é de 10
+          GB por mês, com até 10.000 solicitações PUT, COPY, POST e LIST, além
+          de 1 solicitação GET ou SELECT. Custo total estimado: $0,23/mês.
+        </p>
+        <p>
+          7. Amazon API Gateway: Detalhes: O sistema processa solicitações de
+          API HTTP e API REST, com tamanho médio de 34 KB cada, sem uso de
+          memória cache. Gerencia mensagens WebSocket de 32 KB e até 10.000
+          solicitações mensais. Custo total estimado: $10,00/mês.
+        </p>
+        <p>
+          8. AWS Lambda: Detalhes: A arquitetura é baseada em x86, operando em
+          modo de invocação em buffer. Conta com 512 MB de armazenamento
+          temporário, processa 10.000 solicitações por mês e possui
+          simultaneidade provisionada de 8 instâncias habilitadas por 24 horas.
+          Custo total estimado: $0,00/mês. (O nível gratuito do Lambda inclui 1
+          milhão de solicitações gratuitas por mês e 400.000 GB/segundos de
+          tempo de computação por mês.)
+        </p>
+        <p>
+          9. Amazon Cognito: Detalhes: Os recursos avançados de segurança estão
+          habilitados, e o sistema suporta 10.000 usuários ativos mensais (MAU).
+          Custo total estimado: $0,50/mês. (O plano Cognito Lite tem um nível
+          gratuito de 10.000 MAUs.)
+        </p>
+        <p>
+          10. Amazon SQS: Detalhes: Processa 1 milhão de solicitações por mês de
+          fila padrão, e 1 milhão de solicitações por mês de fila FIFO. Custo
+          total estimado: $0,00/mês.
+        </p>
+        <p>
+          11. Amazon DynamoDB: Detalhes: Utiliza a classe de tabela Standard,
+          com itens de tamanho médio de 1 KB. A capacidade reservada de leitura
+          e gravação tem prazo de 1 ano, e o armazenamento total de dados é de
+          200 GB. Custo total estimado: $76,14/mês. + $180,00 inicial.
+        </p>
+        <p>
+          12. Amazon SES: Detalhes: Processa até 3.500 mensagens de e-mail por
+          mês enviadas pelo cliente de e-mail. Custo total estimado: $0,70/mês.
+        </p>
+        <p>
+          13. Amazon CloudWatch: Detalhes: Suporta 40 métricas, incluindo
+          detalhadas e personalizadas. Custo total estimado: $12,00/mês.
+        </p>
+        <p>
+          14. AWS X-Ray: Detalhes: Apresenta taxa de amostragem de 1, com X-Ray
+          Insights desabilitado. Processa 10.000 solicitações e 3.500 consultas
+          por mês. Custo total estimado: $0,00/mês.
+        </p>
+        <p>
+          15. AWS CloudTrail: Detalhes: Free Tier. Custo total estimado:
+          $0,00/mês.
+        </p>
+        <p>
+          16. AWS SAM: Detalhes: Serviço gratuito. Custo total estimado:
+          $0,00/mês.
+        </p>
+        <p>
+          17. NAT Gateway: Detalhes: Utiliza 1 gateway NAT e 8 endereços IPv4
+          públicos. Custo total estimado: $62,50/mês.
+        </p>
+        <p>
+          18. AWS Step Functions: Detalhes: Free Tier. Custo total estimado:
+          $0,00/mês.
+        </p>
+        <p>
+          19. Amazon IAM (Identity and Access Management): Detalhes: Serviço
+          Gratuito. Custo total estimado: $0,00/mês.
+        </p>
+      </div>
+    </div>
+
+    <div class="perfil hidden">
+      <h2>Equipe</h2>
+      <div class="row row-cols-1 row-cols-md-4 g-5">
+        <div class="col">
+          <div class="card">
+            <img
+              src="./imagens/Brendon.jpg"
+              class="card-img-top img-fluid w-100"
+              alt="print do blog"
+            />
+            <div class="card-body">
+              <h5 class="card-title">Brendon Souza</h5>
+              <p class="card-text">
+                Iniciei minha trajetória profissional com foco em design
+                gráfico, mas logo redirecionei meu caminho para a área de
+                tecnologia, com um interesse crescente em cloud computing.
+              </p>
+              <div class="d-flex justify-content-center">
+                <a
+                  href="https://github.com/brendonpereiradev/brendonpereiradev/tree/main"
+                  target="_blank"
+                  class="btn btn-outline-dark me-3"
+                  ><i class="bi bi-github"></i
+                ></a>
+                <a
+                  href="https://www.linkedin.com/in/brendonsouza2024/"
+                  target="_blank"
+                  class="btn btn-outline-primary"
+                  ><i class="bi bi-linkedin"></i
+                ></a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col">
+          <div class="card">
+            <img
+              src="./imagens/Jamily.jpg"
+              class="card-img-top img-fluid w-100"
+              alt="print do blog"
+            />
+            <div class="card-body">
+              <h5 class="card-title">Jamilly Fernandes</h5>
+              <p class="card-text">
+                Atualmente sou estudante de Cloud Computing e Desenvolvimento Full Stack. Acredito no poder da tecnologia para impulsionar mudanças significativas, transformando a forma como nos conectamos.
+              </p>
+              <div class="d-flex justify-content-center">
+                <a
+                  href="https://github.com/JamillyFernandes"
+                  target="_blank"
+                  class="btn btn-outline-dark me-3"
+                  ><i class="bi bi-github"></i
+                ></a>
+                <a
+                  href="https://www.linkedin.com/in/jamilly-fernandes-407a21272/"
+                  target="_blank"
+                  class="btn btn-outline-primary"
+                  ><i class="bi bi-linkedin"></i
+                ></a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col">
+          <div class="card">
+            <img
+              src="./imagens/Thalita.jpg"
+              class="card-img-top img-fluid w-100"
+              alt="print do blog"
+            />
+            <div class="card-body">
+              <h5 class="card-title">Thalita dos Santos</h5>
+              <p class="card-text">
+                Em 2022,cursei o curso de trilha tecnológica no instituto Jelson
+                Da Costa Antunes(IJCA), adquirido conhecimento em word, excel,
+                power point e princípios de programação
+              </p>
+              <div class="d-flex justify-content-center">
+                <a
+                  href="https://www.linkedin.com/in/thalita-dos-santos-5a9209227/"
+                  target="_blank"
+                  class="btn btn-outline-primary"
+                  ><i class="bi bi-linkedin"></i
+                ></a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col">
+          <div class="card">
+            <img
+              src="./imagens/Natã.jpg"
+              class="card-img-top img-fluid w-100"
+              alt="print do blog"
+            />
+            <div class="card-body">
+              <h5 class="card-title">Natã Azevedo</h5>
+              <p class="card-text">
+                Estudante de computação em nuvem pela AWS/Restart, com interesse
+                em Cloud Computing e buscando cada vez mais aplicar meus
+                conhecimentos na área.
+              </p>
+              <div class="d-flex justify-content-center">
+                <a
+                  href="https://www.linkedin.com/in/nat%C3%A3-azevedo-9b1a18175/"
+                  target="_blank"
+                  class="btn btn-outline-primary"
+                  ><i class="bi bi-linkedin"></i
+                ></a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+      crossorigin="anonymous"
+    ></script>
+
+    <script src="script.js"></script>
+  </body>
+</html>
