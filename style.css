@@ -5,12 +5,26 @@
 /* Estilo geral */
 body {
     font-family: Arial, sans-serif !important;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh; /* Garante que a página ocupa toda a altura da janela */
+    margin: 0;
     background-image: url('./imagens/download\ atul.png'); /* Substitua pelo caminho da sua imagem */
     background-size: cover; /* Ajusta a imagem para cobrir todo o fundo */
     background-repeat: no-repeat; /* Evita repetição da imagem */
     background-attachment: fixed; /* Faz a imagem de fundo ficar fixa ao rolar a página */
     background-position: center; /* Centraliza a imagem */
     color: black !important;
+}
+
+/* Container principal responsivo */
+.container {
+    width: 100%;
+    max-width: 1200px; /* Limita a largura máxima */
+    padding: 16px; /* Espaçamento interno */
+    box-sizing: border-box; /* Inclui padding e borda no tamanho total */
 }
 
 /* Header */
@@ -76,12 +90,12 @@ section h2 p {
     margin-bottom: 15px; /* Espaço abaixo do parágrafo */
 }
 
+/* Ajustes nas imagens */
 img {
-    display: flex;
-    align-items: center;
-    height: 70vh;
-    width: 60vw;
+    height: auto;
+    max-width: 100%; /* Faz as imagens se ajustarem ao tamanho da tela */
     margin: 0 auto;
+    display: block;
 }
 
 section.arquitetura p {
@@ -89,27 +103,22 @@ section.arquitetura p {
     font-family: 'Montserrat', sans-serif; 
 }
 
-
 .orcamento p {
     font-size: 1.3em;
     font-family: 'Montserrat', sans-serif; 
 }
 
-
 #content {
     text-align: center;
     padding-top: 113px;
     margin-top: 150px; 
-    
 }
-
 
 #content div p {
     color: black;
     font-family: 'Montserrat', sans-serif;
     font-size: 1.7em;
     margin-top: 20px; 
-   
 }
 
 .hidden {
@@ -131,13 +140,13 @@ section.arquitetura p {
     color: #7e42f5;
 }
 
+/* Botões */
 .buttons {
     display: flex;
     gap: 20px; 
     justify-content: center; 
     margin-top: 150px; 
 }
-
 
 .buttons button {
     font-size: 1.5em; 
@@ -150,28 +159,12 @@ section.arquitetura p {
     transition: background-color 0.5s; 
 }
 
-
 .buttons button:hover {
     background-color: #b942f5;
 }
 
-.oncamento{
-    margin-left:166px;
+.oncamento {
+    margin-left: 166px;
 }
 
-body {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  min-height: 100vh;
-  margin: 0;
-  font-family: Arial, sans-serif;
-}
-
-.container {
-  width: 100%;
-  max-width: 1200px;
-  padding: 16px;
-  box-sizing: border-box;
-}
 
