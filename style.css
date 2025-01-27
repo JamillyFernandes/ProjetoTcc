@@ -159,4 +159,19 @@ section.arquitetura p {
     margin-left:166px;
 }
 
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  margin: 0;
+  font-family: Arial, sans-serif;
+}
+
+.container {
+  width: 100%;
+  max-width: 1200px;
+  padding: 16px;
+  box-sizing: border-box;
+}
 
