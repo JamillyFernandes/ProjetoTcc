@@ -18,7 +18,17 @@ header {
     text-align: center;
     background: linear-gradient(to right, #b942f5, #7e42f5);
     color: white;
-    height: 106px;
+    height: 95px;
+    width: 110%;
+    margin-left: -30%; /* Ajuste para centralizar melhor em telas grandes */
+}
+
+/* Ajustes para dispositivos móveis */
+@media (max-width: 768px) {
+    header {
+        width: 100%; /* Ajusta a largura para a tela do celular */
+        margin-left: 0; /* Remove o ajuste de margem para celulares */
+    }
 }
 
 /* Efeito de degradê animado para o h1 com Poppins ExtraBold */
@@ -33,6 +43,7 @@ header {
         background-position: 0% 50%;
     }
 }
+
 
 header h1,
 header h2 {
@@ -79,8 +90,8 @@ section h2 p {
 img {
     display: flex;
     align-items: center;
-    height: 70vh;
-    width: 60vw;
+    height: 45vh;
+    width: 100vw;
     margin: 0 auto;
 }
 
@@ -158,3 +169,5 @@ section.arquitetura p {
 .oncamento{
     margin-left:166px;
 }
+
+
