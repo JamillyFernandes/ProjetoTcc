@@ -163,153 +163,6 @@ section.arquitetura p {
 
 /* Mobile */
 
-/* Estilo geral */
-body {
-    font-family: Arial, sans-serif !important;
-    background-image: url('./imagens/download\ atul.png'); 
-    background-size: cover; 
-    background-repeat: no-repeat; 
-    background-attachment: fixed; 
-    background-position: center; 
-    color: black !important;
-}
-
-/* Header */
-header {
-    text-align: center;
-    background: linear-gradient(to right, #b942f5, #7e42f5);
-    color: white;
-    height: 106px;
-}
-
-/* Efeito de degradê animado para o h1 com Poppins ExtraBold */
-@keyframes gradientAnimation {
-    0% {
-        background-position: 0% 50%;
-    }
-    50% {
-        background-position: 100% 50%;
-    }
-    100% {
-        background-position: 0% 50%;
-    }
-}
-
-header h1,
-header h2 {
-    font-family: 'Poppins', sans-serif;
-    font-weight: 800;
-    font-size: 3.5em;
-    background: linear-gradient(to right, #F8BBD0, #C9A9FF);
-    -webkit-background-clip: text;
-    background-clip: text;
-    color: transparent;
-    animation: gradientAnimation 3s ease infinite;
-}
-
-header h1 p,
-header h2 p {
-    font-family: 'Montserrat', sans-serif;
-    font-size: 1em;
-    color: #FFFFFF;
-}
-
-section {
-    padding: 20px;
-}
-
-/* Ajuste para h2 em section */
-section h2 {
-    font-family: 'Poppins', sans-serif;
-    font-weight: 800;
-    font-size: 4em;
-    background: linear-gradient(to right, #b942f5, #7e42f5);
-    -webkit-background-clip: text;
-    background-clip: text;
-    color: transparent;
-}
-
-section h2 p {
-    font-family: 'Montserrat', sans-serif; 
-    font-size: 1.2em; 
-    color: black; 
-    margin-top: 10px; 
-    margin-bottom: 15px; 
-}
-
-img {
-    display: flex;
-    align-items: center;
-    height: 70vh;
-    width: 60vw;
-    margin: 0 auto;
-}
-
-section.arquitetura p,
-.orcamento p {
-    font-size: 1.3em;
-    font-family: 'Montserrat', sans-serif; 
-}
-
-#content {
-    text-align: center;
-    padding-top: 113px;
-    margin-top: 150px; 
-}
-
-#content div p {
-    color: black;
-    font-family: 'Montserrat', sans-serif;
-    font-size: 1.7em;
-    margin-top: 20px; 
-}
-
-.hidden {
-    display: none;
-}
-
-.navbar-brand img {
-    width: 30px;
-    height: auto;
-    margin: 0 auto;
-}
-
-.navbar-toggler-icon,
-.navbar-nav .nav-link {
-    color: black;
-}
-
-.navbar-nav .nav-link:hover {
-    color: #7e42f5;
-}
-
-.buttons {
-    display: flex;
-    gap: 20px; 
-    justify-content: center; 
-    margin-top: 150px; 
-}
-
-.buttons button {
-    font-size: 1.5em; 
-    padding: 15px 30px; 
-    background-color: #7e42f5; 
-    color: white; 
-    border: none; 
-    border-radius: 8px; 
-    cursor: pointer; 
-    transition: background-color 0.5s; 
-}
-
-.buttons button:hover {
-    background-color: #b942f5;
-}
-
-.oncamento {
-    margin-left: 166px;
-}
-
-/* Media Query para Mobile */
 @media (max-width: 768px) {
     /* Ajustes no body */
     body {
@@ -318,7 +171,7 @@ section.arquitetura p,
 
     /* Header */
     header {
-        height: 80px; /* Menor altura para cabeçalhos em telas pequenas */
+        height: 90px; /* Menor altura para cabeçalhos em telas pequenas */
     }
 
     header h1,
@@ -328,18 +181,18 @@ section.arquitetura p,
 
     /* Ajuste nos títulos de seção */
     section h2 {
-        font-size: 2.5em;
+        font-size: 2.2em;
     }
 
     /* Ajuste nas imagens */
     img {
         height: 50vh;
-        width: 80vw;
+        width: 90vw; /* Aumenta a largura da imagem */
     }
 
     /* Ajuste na navbar */
     .navbar-brand img {
-        width: 25px; /* Reduz o tamanho do logo */
+        width: 22px; /* Reduz o tamanho do logo */
     }
 
     .navbar-toggler-icon {
@@ -348,28 +201,28 @@ section.arquitetura p,
 
     .buttons {
         flex-direction: column; /* Alinha os botões em coluna */
-        margin-top: 100px;
+        gap: 15px; /* Reduz a distância entre os botões */
+        margin-top: 60px;
     }
 
     .buttons button {
-        font-size: 1.2em; /* Reduz o tamanho dos botões */
-        padding: 12px 20px;
+        font-size: 1.3em; /* Reduz o tamanho dos botões */
+        padding: 12px 25px;
     }
 
     .orcamento {
-        margin-left: 20px; /* Ajusta o alinhamento no mobile */
+        margin-left: 0; /* Ajusta o alinhamento no mobile */
     }
 
     #content {
-        padding-top: 80px; /* Ajusta o padding no conteúdo */
+        padding-top: 50px; /* Ajusta o padding no conteúdo */
     }
 
     #content div p {
-        font-size: 1.3em; /* Reduz o tamanho da fonte */
+        font-size: 1.2em; /* Reduz o tamanho da fonte */
     }
 
     section p {
-        font-size: 1.1em; /* Reduz o tamanho do texto em seções */
+        font-size: 1em; /* Reduz o tamanho do texto em seções */
     }
 }
-
