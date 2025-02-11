@@ -163,6 +163,7 @@ section.arquitetura p {
 
 /* Mobile */
 
+/* Media Query para dispositivos móveis */
 @media (max-width: 768px) {
     /* Ajustes no body */
     body {
@@ -176,23 +177,23 @@ section.arquitetura p {
 
     header h1,
     header h2 {
-        font-size: 2em; /* Reduz o tamanho do texto */
+        font-size: 2.5em; /* Reduz o tamanho do texto */
     }
 
     /* Ajuste nos títulos de seção */
     section h2 {
-        font-size: 2.2em;
+        font-size: 2em;
     }
 
     /* Ajuste nas imagens */
     img {
-        height: 50vh;
-        width: 90vw; /* Aumenta a largura da imagem */
+        height: auto; /* A altura da imagem será ajustada automaticamente */
+        width: 100vw; /* Imagem ocupa toda a largura da tela */
     }
 
     /* Ajuste na navbar */
     .navbar-brand img {
-        width: 22px; /* Reduz o tamanho do logo */
+        width: 25px; /* Reduz o tamanho do logo */
     }
 
     .navbar-toggler-icon {
@@ -201,12 +202,12 @@ section.arquitetura p {
 
     .buttons {
         flex-direction: column; /* Alinha os botões em coluna */
-        gap: 15px; /* Reduz a distância entre os botões */
-        margin-top: 60px;
+        gap: 10px; /* Reduz a distância entre os botões */
+        margin-top: 50px;
     }
 
     .buttons button {
-        font-size: 1.3em; /* Reduz o tamanho dos botões */
+        font-size: 1.4em; /* Ajusta o tamanho dos botões */
         padding: 12px 25px;
     }
 
@@ -215,14 +216,14 @@ section.arquitetura p {
     }
 
     #content {
-        padding-top: 50px; /* Ajusta o padding no conteúdo */
+        padding-top: 40px; /* Ajusta o padding no conteúdo */
     }
 
     #content div p {
-        font-size: 1.2em; /* Reduz o tamanho da fonte */
+        font-size: 1.3em; /* Ajusta o tamanho da fonte */
     }
 
     section p {
-        font-size: 1em; /* Reduz o tamanho do texto em seções */
+        font-size: 1.1em; /* Ajusta o tamanho do texto em seções */
     }
 }
