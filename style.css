@@ -162,276 +162,214 @@ section.arquitetura p {
 /* Medias */
 
 /* Mobile */
-@media (max-width: 500px){
-    
-    header {
-        height: auto;
-    
-        section {
-            flex-direction: column;
-            height: auto;
-    
-            h2 {
-                display: none;
-            }
-    
-            nav {
-                width: 100%;
-    
-                ul {
-                    flex-direction: column;
-                }
-            }
-        }
+
+/* Estilo geral */
+body {
+    font-family: Arial, sans-serif !important;
+    background-image: url('./imagens/download\ atul.png'); 
+    background-size: cover; 
+    background-repeat: no-repeat; 
+    background-attachment: fixed; 
+    background-position: center; 
+    color: black !important;
+}
+
+/* Header */
+header {
+    text-align: center;
+    background: linear-gradient(to right, #b942f5, #7e42f5);
+    color: white;
+    height: 106px;
+}
+
+/* Efeito de degradê animado para o h1 com Poppins ExtraBold */
+@keyframes gradientAnimation {
+    0% {
+        background-position: 0% 50%;
     }
-
-    .containerBackgroundImage {
-        width: 100vw;
-        min-height: 40vh;
-
-        article {
-            width: 100%;
-            flex-wrap: wrap;
-            align-items: center;
-
-            h1 {
-                font-size: 2.25rem;
-            }
-
-            p {
-                font-size: 1rem;
-            }
-
-            button{
-                font-size: 1rem;
-                width: 30%
-            }
-        }
+    50% {
+        background-position: 100% 50%;
     }
-
-    .containerSobre {
-        padding: 5rem 0;
-        flex-direction: column;
-        gap: 3rem;
-
-        article {
-            width: 100%;
-            align-items: center;
-
-            h3 {
-                font-size: 1rem;
-            }
-
-            h2 {
-                font-size: 1.5rem;
-            }
-
-            p {
-                font-size: .9rem;
-            }
-
-            h2, h3, p {
-                width: 90%;
-            }
-
-            p {
-                text-align: justify;
-            }
-        }
-
-        img {
-            width: 80%;
-        }
-    }
-
-    .containerServicos{
-        padding: 3rem 0;
-
-        .containerCards {
-
-
-            .card {
-                width: 90%;
-
-                div {
-
-                    p {
-                        font-size: 1.2rem;
-                    }
-
-                }
-
-            }
-
-        }
-    }
-
-    .containerContatos {
-        padding: 3rem 0;
-        flex-direction: column;
-        align-items: center;
-
-
-        section {
-            width: 90%;
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            align-items: center;
-            padding: 1rem 0;
-
-            h2, h3 {
-                text-align: center;
-            }
-
-            h2 {
-                font-size: 1.25rem;
-            }
-
-            h3 {
-                font-size: 1rem;
-            }
-
-            .containerImagens {
-                flex-direction: column;
-                align-items: center;
-            }
-
-            form {
-                width: 100%;
-
-                .input {
-                    width: 100%;
-                }
-
-                button{
-                    width: 100%;
-                }
-            }
-        }
-    }
-
-    footer {
-        text-align: center;
+    100% {
+        background-position: 0% 50%;
     }
 }
 
-/* Tablet */
-@media (min-width: 501px) and (max-width: 900px){
-    header {
-        section {
-            flex-direction: column;
-
-            nav {
-                width: 100%;
-            }
-        }
-    }
-
-    .containerBackgroundImage {
-        article {
-            h1 {
-                font-size: 4rem;
-            }
-            p {
-                font-size: 1.5rem;
-            }
-        }
-    }
-
-    .containerSobre {
-        padding: 5rem 0;
-        flex-direction: column;
-        gap: 3rem;
-
-        article {
-            width: 100%;
-            align-items: center;
-
-            h2, h3, p {
-                width: 90%;
-            }
-
-            p {
-                text-align: justify;
-            }
-        }
-
-        img {
-            width: 30rem;
-        }
-    }
-
-    .containerServicos{
-        padding: 3rem 0;
-    }
-
-    .containerContatos {
-        padding: 3rem 0;
-        flex-direction: column;
-        align-items: center;
-
-
-        section {
-            width: 90%;
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            align-items: center;
-            padding: 1rem 0;
-
-            h2, h3 {
-                text-align: center;
-            }
-
-            .containerImagens {
-                flex-direction: column;
-                align-items: center;
-            }
-
-            form {
-                width: 100%;
-
-                .input {
-                    width: 100%;
-                }
-
-                button{
-                    width: 100%;
-                }
-            }
-        }
-    }
+header h1,
+header h2 {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 800;
+    font-size: 3.5em;
+    background: linear-gradient(to right, #F8BBD0, #C9A9FF);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+    animation: gradientAnimation 3s ease infinite;
 }
 
-/* Notebook */
-@media (min-width: 901px) and (max-width: 1500px){
-    .containerSobre {
-        padding: 5rem 0;
-        flex-direction: column;
-        gap: 3rem;
+header h1 p,
+header h2 p {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1em;
+    color: #FFFFFF;
+}
 
-        article {
-            width: 100%;
-            align-items: center;
+section {
+    padding: 20px;
+}
 
-            h2, h3, p {
-                width: 90%;
-            }
+/* Ajuste para h2 em section */
+section h2 {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 800;
+    font-size: 4em;
+    background: linear-gradient(to right, #b942f5, #7e42f5);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+}
 
-            p {
-                text-align: justify;
-            }
-        }
+section h2 p {
+    font-family: 'Montserrat', sans-serif; 
+    font-size: 1.2em; 
+    color: black; 
+    margin-top: 10px; 
+    margin-bottom: 15px; 
+}
 
-        img {
-            width: 30rem;
-        }
+img {
+    display: flex;
+    align-items: center;
+    height: 70vh;
+    width: 60vw;
+    margin: 0 auto;
+}
+
+section.arquitetura p,
+.orcamento p {
+    font-size: 1.3em;
+    font-family: 'Montserrat', sans-serif; 
+}
+
+#content {
+    text-align: center;
+    padding-top: 113px;
+    margin-top: 150px; 
+}
+
+#content div p {
+    color: black;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1.7em;
+    margin-top: 20px; 
+}
+
+.hidden {
+    display: none;
+}
+
+.navbar-brand img {
+    width: 30px;
+    height: auto;
+    margin: 0 auto;
+}
+
+.navbar-toggler-icon,
+.navbar-nav .nav-link {
+    color: black;
+}
+
+.navbar-nav .nav-link:hover {
+    color: #7e42f5;
+}
+
+.buttons {
+    display: flex;
+    gap: 20px; 
+    justify-content: center; 
+    margin-top: 150px; 
+}
+
+.buttons button {
+    font-size: 1.5em; 
+    padding: 15px 30px; 
+    background-color: #7e42f5; 
+    color: white; 
+    border: none; 
+    border-radius: 8px; 
+    cursor: pointer; 
+    transition: background-color 0.5s; 
+}
+
+.buttons button:hover {
+    background-color: #b942f5;
+}
+
+.oncamento {
+    margin-left: 166px;
+}
+
+/* Media Query para Mobile */
+@media (max-width: 768px) {
+    /* Ajustes no body */
+    body {
+        background-attachment: scroll; /* Remove o efeito de fixação no fundo para mobile */
     }
 
-    .containerServicos{
-        padding: 3rem 0;
+    /* Header */
+    header {
+        height: 80px; /* Menor altura para cabeçalhos em telas pequenas */
     }
 
+    header h1,
+    header h2 {
+        font-size: 2em; /* Reduz o tamanho do texto */
+    }
+
+    /* Ajuste nos títulos de seção */
+    section h2 {
+        font-size: 2.5em;
+    }
+
+    /* Ajuste nas imagens */
+    img {
+        height: 50vh;
+        width: 80vw;
+    }
+
+    /* Ajuste na navbar */
+    .navbar-brand img {
+        width: 25px; /* Reduz o tamanho do logo */
+    }
+
+    .navbar-toggler-icon {
+        font-size: 1.5em; /* Aumenta o tamanho do ícone da navbar */
+    }
+
+    .buttons {
+        flex-direction: column; /* Alinha os botões em coluna */
+        margin-top: 100px;
+    }
+
+    .buttons button {
+        font-size: 1.2em; /* Reduz o tamanho dos botões */
+        padding: 12px 20px;
+    }
+
+    .orcamento {
+        margin-left: 20px; /* Ajusta o alinhamento no mobile */
+    }
+
+    #content {
+        padding-top: 80px; /* Ajusta o padding no conteúdo */
+    }
+
+    #content div p {
+        font-size: 1.3em; /* Reduz o tamanho da fonte */
+    }
+
+    section p {
+        font-size: 1.1em; /* Reduz o tamanho do texto em seções */
+    }
 }
 
