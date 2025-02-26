@@ -438,3 +438,104 @@
     <script src="script.js"></script>
   </body>
 </html>
+
+
+/* Estilos para telas menores que 768px (tablets e smartphones) */
+@media (max-width: 768px) {
+    /* Ajustes no header */
+    header h1,
+    header h2 {
+        font-size: 2em; /* Reduz o tamanho da fonte */
+    }
+
+    header h1 p,
+    header h2 p {
+        font-size: 0.8em; /* Reduz o tamanho da fonte dos parágrafos */
+    }
+
+    /* Ajustes nas seções */
+    section h2 {
+        font-size: 2em; /* Reduz o tamanho da fonte */
+    }
+
+    section h2 p {
+        font-size: 0.9em; /* Reduz o tamanho da fonte dos parágrafos */
+    }
+
+    /* Ajustes nas imagens */
+    img {
+        height: auto; /* Altura automática para evitar distorção */
+        width: 90%; /* Largura maior para preencher a tela */
+    }
+
+    /* Ajustes no conteúdo */
+    #content {
+        padding-top: 50px; /* Reduz o padding superior */
+        margin-top: 50px; /* Reduz a margem superior */
+    }
+
+    #content div p {
+        font-size: 1em; /* Reduz o tamanho da fonte */
+    }
+
+    /* Ajustes nos botões */
+    .buttons {
+        flex-direction: column; /* Coloca os botões em coluna */
+        gap: 10px; /* Reduz o espaço entre os botões */
+        margin-top: 50px; /* Reduz a margem superior */
+    }
+
+    .buttons button {
+        font-size: 1em; /* Reduz o tamanho da fonte */
+        padding: 8px 16px; /* Reduz o padding */
+    }
+
+    /* Ajustes no texto de orçamento */
+    .orcamento p {
+        font-size: 1em; /* Reduz o tamanho da fonte */
+    }
+
+    .oncamento {
+        margin-left: 0; /* Remove a margem esquerda */
+    }
+
+    /* Ajustes para os cards da equipe */
+    .perfil .row {
+        flex-direction: column; /* Coloca os cards em coluna */
+    }
+
+    .perfil .col {
+        flex: 1 1 100%; /* 1 coluna em telas pequenas */
+        max-width: 100%;
+    }
+}
+
+/* Estilos para telas menores que 480px (smartphones pequenos) */
+@media (max-width: 480px) {
+    header h1,
+    header h2 {
+        font-size: 1.5em; /* Reduz ainda mais o tamanho da fonte */
+    }
+
+    header h1 p,
+    header h2 p {
+        font-size: 0.7em; /* Reduz ainda mais o tamanho da fonte dos parágrafos */
+    }
+
+    section h2 {
+        font-size: 1.5em; /* Reduz ainda mais o tamanho da fonte */
+    }
+
+    section h2 p {
+        font-size: 0.8em; /* Reduz ainda mais o tamanho da fonte dos parágrafos */
+    }
+
+    #content div p {
+        font-size: 0.9em; /* Reduz ainda mais o tamanho da fonte */
+    }
+
+    .buttons button {
+        font-size: 0.9em; /* Reduz ainda mais o tamanho da fonte */
+        padding: 6px 12px; /* Reduz ainda mais o padding */
+    }
+}
