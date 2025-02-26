@@ -184,7 +184,7 @@ section.arquitetura p {
     /* Ajustes nas imagens */
     img {
         height: auto; /* Altura automática para evitar distorção */
-        width: 90%; /* Largura maior para preencher a tela */
+        width: auto; /* Largura maior para preencher a tela */
     }
 
     /* Ajustes no conteúdo */
