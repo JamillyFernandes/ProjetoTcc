@@ -157,6 +157,25 @@ section.arquitetura p {
 
 .oncamento{
     margin-left:166px;
+
+
+    @media (max-width: 768px) {
+    .navbar-nav {
+        flex-direction: column; /* Coloca os itens do menu em coluna */
+    }
+
+    .navbar-toggler-icon {
+        display: block; /* Exibe o ícone do menu hamburguer */
+    }
+
+    .navbar-collapse {
+        display: none; /* Oculta o menu por padrão */
+    }
+
+    .navbar-collapse.show {
+        display: block; /* Exibe o menu quando o ícone é clicado */
+    }
+}
 }
 
 
